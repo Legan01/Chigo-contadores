@@ -1,0 +1,245 @@
+:root {
+  --contenedor: 75rem;
+  --color-circulo: #FFEEEE;
+  --color-texto: #0000;
+}
+
+/*header*/
+
+
+/**/
+.contendor_Chigo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 75rem;
+  margin: auto;
+  position: relative;
+  top: 6rem;
+}
+
+.texto_chigo {
+  font-family: var(--fuente-texto);
+  font-weight: 700;
+  text-align: center;
+  margin-left: 5rem;
+  display: inline-block;
+}
+.texto_chigo-parrafo {
+  position: relative;
+  left: 10rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.circulo {
+  background: url(../img/prueba.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-color: var(--color-circulo);
+  border-radius: 77% 23% 57% 43% / 39% 49% 51% 61%;
+  width: 100%;
+  height: 45.563rem;
+}
+.boton_chigo {
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  color: var(--fuente-texto);
+  background: var(--color-circulo);
+  position: relative;
+  top: 3rem;
+  left: 26rem;
+}
+
+/**
+.contendor__tarjeta{
+  
+  display: grid;
+  grid-template-columns: repeat(4,19%);
+  gap: 2rem;
+}
+.contendor__tarjeta .flip-card:nth-child(5){
+  grid-column:3/2;
+  grid-row:3/2;
+  background: red;  
+}
+.contendor__tarjeta .flip-card:nth-child(6){
+  grid-column-start: 2;
+  grid-column-end: 4;
+  background: yellow;  
+}
+.flip-card {
+  
+  width: 21.875rem;
+  height: 28.125rem;
+  perspective: 62.5rem;
+}
+
+.flip-card-inner {
+  border-radius: 1rem;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background: var(--color-circulo);
+}
+img{
+    width: 140px;
+    border-radius: 50%;
+   
+}
+.flip-card:focus {
+    outline: 0;
+}
+.flip-card:hover .flip-card-inner,
+.flip-card:focus .flip-card-inner{
+  transform: rotateY(180deg);
+}
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.flip-card-back {
+ 
+  color: white;
+  transform: rotateY(180deg);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card__descripcion{
+    margin-top: 12rem;
+}
+**/
+.Circulo {
+  background: url(../img/a.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-color: var(--color-circulo);
+  border-radius: 77% 23% 57% 43% / 39% 49% 51% 61%;
+  width: 100%;
+  height: 45.563rem;
+}
+.contendor_Chigo:nth-child(2) {
+  align-items: center;
+  gap: 6rem;
+}
+/*medias queries*/
+
+/*esto sirve para telefonos*/
+
+
+@media screen and (max-width: 480px) and (max-width: 576px) {  
+  /**/
+  .contendor_Chigo {
+    width: 20rem;
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .texto_chigo {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    display: inline-block;
+  }
+  .texto_chigo-parrafo {
+    display: inline-block;
+    left: 0rem;
+    line-height: 2.5;
+  }
+  .boton_chigo {
+    top: 2rem;
+    left: 10rem;
+  }
+  .contendor_Chigo .contenedor__chigo-texto {
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .contendor_Chigo .circulo {
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .circulo {
+    width: 189%;
+    height: 22.563rem;
+    position: relative;
+    left: 0rem;
+  }
+  .contendor_Chigo:nth-child(2) {
+    grid-template-rows: repeat(2,66%);
+  }
+  .contendor_Chigo:nth-child(2) .Circulo {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .Circulo{
+    background-size: 155%;
+    height: 28.563rem;
+  }
+  .contendor_Chigo:nth-child(2) .contendor_trabajar{
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: inline-block;
+    position: relative;
+    bottom: 13rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width:992px) {
+  .texto_chigo-parrafo{
+    color: aqua;
+  }
+
+}
+
+/* Remove if you choose, the minimalist design */
+
+@media screen and (min-width: 992px) and (max-width:1200px) { 
+  .texto_chigo-parrafo{
+    color: blue;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width:1400px) { 
+  .contendor_Chigo{
+    gap: 8rem;
+    align-items: center;
+   
+  }
+  .texto_chigo-parrafo{
+   
+    line-height: 2.5;
+    font-size: 2rem;
+  }
+  .contenedor__chigo-texto{
+    position: relative;
+    top: 0rem;
+    right: 6rem;
+  }
+  .boton_chigo{
+    
+    top: 0rem;
+    left: 33rem;
+
+  }
+  .texto_chigo-parrafo:nth-child(2){
+    line-height: 3;
+    font-size: 1.5rem;
+    position: relative;
+    left: 0rem;
+  }
+}

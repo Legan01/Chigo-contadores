@@ -25,6 +25,14 @@
   --z-tooltip: 10;
   --z-fixed: 100;
 }
+body.dark {
+  --body-color:#04293A;
+  --text-color: #fff;
+  --color-circulo:#064663;
+  --color-footer:#041C32;
+  --container-color:#041C32;
+  --title-color:#fff;
+}
 
 @media screen and (min-width: 968px) {
   :root {

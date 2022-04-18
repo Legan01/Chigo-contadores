@@ -2,6 +2,8 @@
   --contenedor: 75rem;
   --color-circulo: #FFEEEE;
   --color-texto: #0000;
+  --secondary: linear-gradient(to top, #8743ff, #4136f1);
+
 }
 
 /*header*/

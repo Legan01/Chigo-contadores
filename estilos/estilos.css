@@ -70,6 +70,9 @@
   grid-template-columns: repeat(4,1fr);
   margin-left: 7rem;
   gap: 6rem;
+  position: relative;
+  top: 10rem;
+
 }
 
 /* FLIP CARD */

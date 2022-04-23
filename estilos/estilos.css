@@ -81,6 +81,21 @@
   height: 504px;
   perspective: 2000px;
 }
+.prueba{
+  background: url(../img/prueba.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  width: 65%;
+  height: 11.563rem;
+  position: relative;
+  left: 3rem;
+  top: 3rem;
+  /* display: flex; */
+  border-radius: 50%;
+  /* display: flex; */
+  border-radius: 50%;
+}
 .fa-regular {
 
   color: var(--fuente-texto);
@@ -307,6 +322,19 @@ img{
     margin: 2rem;
     position: relative;
     top: 12rem;
+  }
+  .prueba{
+    width: 60%;
+    height: 11.563rem;
+    position: relative;
+    left: 4rem;
+    top: 2rem;
+    /* display: flex; */
+    
+  }
+  .flip-card-front p {
+    padding-top: 15rem;
+    padding-left: 6rem;
   }
   .contendor_Chigo {
     width: 20rem;

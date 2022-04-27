@@ -196,6 +196,9 @@ img {
   .nav__name {
     display: none;
   }
+  .theme-toggle{
+    display: none;
+  }
 }
 @media screen and (min-width: 576px) {
   .nav__list {

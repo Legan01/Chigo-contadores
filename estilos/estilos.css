@@ -425,9 +425,7 @@ img{
 /* Remove if you choose, the minimalist design */
 
 @media screen and (min-width: 992px) and (max-width:1200px) { 
-  .texto_chigo-parrafo{
-    color: blue;
-  }
+
 }
 @media screen and (min-width: 1200px) and (max-width:1400px) { 
   .contendor_Chigo{

@@ -1,13 +1,11 @@
 /*=============== GOOGLE FONTS ===============*/
-
-/*
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 
-
+/*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 2.5rem;
 
-
+  /*========== Colors ==========*/
   --hue: 174;
   --sat: 63%;
   --first-color: hsl(var(--hue), var(--sat), 40%);
@@ -17,13 +15,13 @@
   --body-color: hsl(var(--hue), 100%, 99%);
   --container-color: #fff;
   --body-color:#FFF6EA;
-
+  /*========== Font and typography ==========*/
   --body-font: 'Open Sans', sans-serif;
   --h1-font-size: 1.5rem;
   --normal-font-size: .938rem;
   --tiny-font-size: .625rem;
 
-
+  /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
 }
@@ -43,7 +41,7 @@ body.dark {
   }
 }
 
-
+/*=============== BASE ===============*/
 
 html {
   scroll-behavior: smooth;
@@ -71,7 +69,7 @@ img {
   height: auto;
 }
 
-
+/*=============== REUSABLE CSS CLASSES ===============*/
 .section {
   padding: 4.5rem 0 2rem;
 }
@@ -87,14 +85,14 @@ img {
   height: 100vh;
 }
 
-
+/*=============== LAYOUT ===============*/
 .container {
   max-width: 968px;
   margin-left: 1rem;
   margin-right: 1rem;
 }
 
-
+/*=============== HEADER ===============*/
 .header {
   position: fixed;
   top: 0;
@@ -105,7 +103,7 @@ img {
   transition: .4s;
 }
 
-
+/*=============== NAV ===============*/
 .nav {
   height: var(--header-height);
   display: flex;
@@ -159,20 +157,21 @@ img {
 
 .nav__name {
   font-size: var(--tiny-font-size);
+  /* display: none;*/ /* Minimalist design, hidden labels */
 }
 
 .nav__icon {
   font-size: 1.5rem;
 }
 
-
+/*Active link*/
 .active-link {
   position: relative;
   color: var(--first-color);
   transition: .3s;
 }
 
-
+/* Minimalist design, active link */
 /* .active-link::before{
   content: '';
   position: absolute;
@@ -183,16 +182,18 @@ img {
   border-radius: 50%;
 } */
 
-/*
+/* Change background header */
 .scroll-header {
   box-shadow: 0 1px 12px hsla(var(--hue), var(--sat), 15%, 0.15);
 }
 
+/*=============== MEDIA QUERIES ===============*/
+/* For small devices */
+/* Remove if you choose, the minimalist design */
+
+/* For medium devices */
 @media screen and (max-width: 320px) {
   .nav__name {
-    display: none;
-  }
-  .theme-toggle{
     display: none;
   }
 }
@@ -202,8 +203,7 @@ img {
     column-gap: 3rem;
   }
 }
-*/
-/*
+
 @media screen and (min-width: 767px) {
   body {
     margin: 0;
@@ -212,7 +212,7 @@ img {
     padding: 7rem 0 2rem;
   }
   .nav {
-    height: calc(var(--header-height) + 1.5rem); /* 4.5rem 
+    height: calc(var(--header-height) + 1.5rem); /* 4.5rem */
   }
   .nav__img {
     display: none;
@@ -222,13 +222,13 @@ img {
   }
   .nav__name {
     font-size: var(--normal-font-size);
- 
+    /* display: block; */ /* Minimalist design, visible labels */
   }
   .nav__link:hover {
     color: var(--first-color);
   }
 
-
+  /* First design, remove if you choose the minimalist design */
   .active-link::before {
     content: '';
     position: absolute;
@@ -242,10 +242,10 @@ img {
   /* Minimalist design */
   /* .active-link::before{
       bottom: -.75rem;
-  } 
+  } */
 }
 
-
+/* For large devices */
 @media screen and (min-width: 1024px) {
   .container {
     margin-left: auto;

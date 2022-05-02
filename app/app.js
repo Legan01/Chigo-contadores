@@ -36,6 +36,11 @@
 })();
          
 */
+/*romper el preloader */
+
+setTimeout(function(){
+    $('.loader_bg').fadeToggle();
+}, 1500);
 
 const list = document.querySelectorAll(".list");
 

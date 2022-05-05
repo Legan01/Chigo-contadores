@@ -24,6 +24,13 @@ html[data-theme='dark'] {
   --color-text: #B5B5B5;
 }
 
+input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+
 label {
   cursor: pointer;
   text-indent: -9999px;

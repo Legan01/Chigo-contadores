@@ -20,7 +20,7 @@ html[data-theme='dark'] {
   --bg: #333333;
   --bg-panel: #434343;
   --switch-color: #041C32;
-  --color-heading: #0077ff;
+  --color-heading: #04293A;
   --color-text: #B5B5B5;
 }
 
@@ -130,7 +130,7 @@ label:active:after {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #fff;
+  background-color:var(--color-heading);
   z-index: var(--z-fixed);
   transition: .4s;
 }

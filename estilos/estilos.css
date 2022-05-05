@@ -21,7 +21,7 @@ html[data-theme='dark'] {
   --bg-panel: #434343;
   --switch-color: #041C32;
   --color-heading: #04293A;
-  --color-text: #B5B5B5;
+  --color-text: #fff;
 }
 
 input[type=checkbox] {
@@ -175,7 +175,7 @@ a{
 }
 
 .texto_chigo {
-  font-family: var(--fuente-texto);
+  font-family: var(--color-texto);
   font-weight: 700;
   text-align: center;
   margin-left: 5rem;

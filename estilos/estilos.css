@@ -17,11 +17,12 @@ html[data-theme='light']{
 }
 
 html[data-theme='dark'] {
-  --bg: #333333;
-  --bg-panel: #434343;
-  --switch-color: #041C32;
-  --color-heading: #04293A;
-  --color-text: #fff;
+  --body-color:#04293A;
+  --text-color: #fff;
+  --color-circulo:#064663;
+  --color-footer:#041C32;
+  --container-color:#041C32;
+  --title-color:#fff;
 }
 
 input[type=checkbox] {

@@ -621,7 +621,7 @@ img{
 }
 @media screen and (min-width: 1200px) and (max-width:1400px) { 
 
-  .label{
+  label{
     display: none;
   }
 

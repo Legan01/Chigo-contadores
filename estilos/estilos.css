@@ -388,7 +388,7 @@ img{
     left: 0;
     width: 400px;
     height: 60px;
-    background: #fff;
+    background:(--color-circulo);
     display: flex;
     justify-content: center;
     align-items: center;

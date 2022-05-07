@@ -132,7 +132,6 @@ label:active:after {
   top: 0;
   left: 0;
   width: 100%;
-  background-color:var(--color-heading);
   z-index: var(--z-fixed);
   transition: .4s;
 }

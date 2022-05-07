@@ -459,7 +459,7 @@ img{
     top: -35px;
     width: 70px;
     height: 70px;
-    background: #fff;
+    background: var(--color-circulo);
     border-radius: 50%;
     z-index: 1;
     transition: 0.5s;
@@ -474,7 +474,7 @@ img{
     height: 30px;
     background: transparent;
     border-radius: 50%;
-    box-shadow: 15px 18px #fff
+    box-shadow: 15px 18px var(--color-circulo);
 }
 
 .indicator::after {
@@ -486,7 +486,7 @@ img{
     height: 30px;
     background: transparent;
     border-radius: 50%;
-    box-shadow: -15px 18px #fff
+    box-shadow: -15px 18px var(--color-circulo)
 }
 .nav__img {
     

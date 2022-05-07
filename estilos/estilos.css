@@ -163,7 +163,9 @@ a{
 .icon{
     display: none;
 }
-
+.text{
+  color: var(--title-color);
+}
 
 
 

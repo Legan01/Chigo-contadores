@@ -226,7 +226,9 @@ a{
 .testimonial-carousel{
   width: 100%;
   max-width: 100rem;
-  margin: 0 auto
+  margin: 0 auto;
+  position: relative;
+  top: 7rem;
 }
 .testimonials-wrapper{
   width: 95%;

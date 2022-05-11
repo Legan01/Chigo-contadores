@@ -82,3 +82,22 @@ checkbox.addEventListener('change', ()=> {
    
 });
 
+
+$(function() {
+    $('.owl-carousel.testimonial-carousel').owlCarousel({
+      items:4,
+      loop:true,
+      margin:10,
+      autoplay:true,
+      autoplayTimeout:5200,
+      autoplayHoverPause:true,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        750: {
+          items: 4,
+        }
+      }
+    });
+  });

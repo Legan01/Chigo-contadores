@@ -565,7 +565,7 @@ a{
     left: 0rem;
   }
   .contendor_Chigo:nth-child(2) {
-    grid-template-rows: repeat(2,66%);
+    grid-template-rows: repeat(2,61%);
   }
   .contendor_Chigo:nth-child(2) .Circulo {
     grid-row-start: 1;

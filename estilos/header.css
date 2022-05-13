@@ -14,7 +14,7 @@
   --text-color: hsl(var(--hue), 8%, 35%);
   --body-color: hsl(var(--hue), 100%, 99%);
   --container-color: #fff;
-  --body-color:#FFF6EA;
+  --body-color:#ededed;
   /*========== Font and typography ==========*/
   --body-font: 'Open Sans', sans-serif;
   --h1-font-size: 1.5rem;

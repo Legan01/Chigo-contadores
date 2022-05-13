@@ -1,6 +1,6 @@
 :root {
   --contenedor: 75rem;
-  --color-circulo: #ffff;
+  --color-circulo: #fff;
   --color-texto: #0000;
   --secondary: linear-gradient(to top, #8743ff, #4136f1);
 
@@ -17,9 +17,9 @@ html[data-theme='light']{
 }
 
 html[data-theme='dark'] {
-  --body-color:#04293A;
+  --body-color:#444444;
   --text-color: #fff;
-  --color-circulo:#064663;
+  --color-circulo:#171717;
   --color-footer:#000;
   --container-color:#041C32;
   --title-color:#fff;

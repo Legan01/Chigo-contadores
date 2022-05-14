@@ -1,6 +1,7 @@
 :root {
   --contenedor: 75rem;
   --color-circulo: #fff;
+  --color-boton:#f8434a;
   --color-texto: #0000;
   --secondary: linear-gradient(to top, #8743ff, #4136f1);
 
@@ -207,7 +208,7 @@ a{
   padding: 1rem 2rem;
   border-radius: 0.5rem;
   color: var(--fuente-texto);
-  background: var(--color-circulo);
+  background: var(--color-boton);
   position: relative;
   top: 3rem;
   left: 26rem;

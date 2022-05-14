@@ -222,6 +222,11 @@ a{
 
 }
 
+.nuestros_servicios{
+  text-align: center;
+
+  margin-top: 12rem;
+}
 /***/
 .testimonial-carousel{
   width: 100%;

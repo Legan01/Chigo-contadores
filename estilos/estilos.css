@@ -233,7 +233,7 @@ a{
   max-width: 100rem;
   margin: 0 auto;
   position: relative;
-  top: 7rem;
+  top: 1rem;
 }
 .testimonials-wrapper{
   width: 95%;
@@ -264,7 +264,6 @@ a{
   height: 100px;
   margin-bottom: 10px;
   margin-left: -50px;
-  transition: all ease-out .5s;
   transform: translateY(-30%);
   filter: brightness(2)
 }

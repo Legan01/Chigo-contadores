@@ -264,7 +264,6 @@ a{
   height: 100px;
   margin-bottom: 10px;
   margin-left: -50px;
-  box-shadow: 0 0 0 5px #171719;
   transition: all ease-out .5s;
   transform: translateY(-30%);
   filter: brightness(2)

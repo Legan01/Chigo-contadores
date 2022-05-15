@@ -234,7 +234,7 @@ h1{
   text-align: center;
 }
 .ver_mas{
-  background: red;
+  background: var(--color-boton);
   padding: 0.5rem 1rem;
   margin-left: 7rem;
   /* margin-bottom: -14rem; */

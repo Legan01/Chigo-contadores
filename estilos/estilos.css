@@ -233,6 +233,15 @@ h1{
   font-size: 1rem;
   text-align: center;
 }
+.ver_mas{
+  background: red;
+  padding: 0.5rem 1rem;
+  margin-left: 7rem;
+  /* margin-bottom: -14rem; */
+  /* padding-top: 1rem; */
+  position: relative;
+  top: 1rem;
+}
 .testimonial-carousel{
   width: 100%;
   max-width: 100rem;

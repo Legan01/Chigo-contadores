@@ -207,7 +207,7 @@ a{
   text-decoration: none;
   padding: 1rem 2rem;
   border-radius: 0.5rem;
-  color: var(--bg);
+  color: #fff;
   background: var(--color-boton);
   position: relative;
   top: 3rem;

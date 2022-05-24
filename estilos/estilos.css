@@ -507,7 +507,7 @@ h1{
 }
 
 .navigation ul li.active a .text {
-    transform: translateY(18px);
+    transform: translateY(6px);
     opacity: 1;
 }
 

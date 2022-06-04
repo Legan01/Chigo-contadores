@@ -4,42 +4,33 @@
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 2.5rem;
-
-  /*========== Colors ==========*/
-
-  /*========== Font and typography ==========*/
+  --body-color:#ededed;
+  --color-10:#ffff;
+  --color-30:#f8434a;
+  --body-color:#ededed; 
   --body-font: 'Open Sans', sans-serif;
- 
+  --switch-color:#ededed ;
 
   /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
+
 }
 body{
   background: var(--body-color);
 }
-:root {
-  --contenedor: 75rem;
-  --color-10: #fff;
-  --color-boton:#f8434a;
 
+html[data-theme='light']{  
  
-  --color-30:#f8434a;
 
-}
-html[data-theme='dark']{  
- 
-  --switch-color:#ededed ;
-  --color-10:#ffff;
-  --color-30:#f8434a;
-  --body-color:#ededed; /* color 60%*/
-  --texto:#fff;
+  /* color 60%*/
+
 
 }
 
-html[data-theme='light'] {
+html[data-theme='dark'] {
   --switch-color:#082032;
-  --body-color:#082032; /* color 60%   light*/
+  --body-color:#082032; /* color 60%   light  dark*/
   --color-10:#fff;
   --color-30:#2C394B;
   --texto:#fff;

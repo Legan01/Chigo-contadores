@@ -27,7 +27,7 @@ body{
   --color-30:#f8434a;
 
 }
-html[data-theme='light']{  
+html[data-theme='dark']{  
  
   --switch-color:#ededed ;
   --color-10:#ffff;
@@ -37,9 +37,9 @@ html[data-theme='light']{
 
 }
 
-html[data-theme='dark'] {
+html[data-theme='light'] {
   --switch-color:#082032;
-  --body-color:#082032; /* color 60%*/
+  --body-color:#082032; /* color 60%   light*/
   --color-10:#fff;
   --color-30:#2C394B;
   --texto:#fff;

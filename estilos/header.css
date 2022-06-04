@@ -18,9 +18,18 @@
 body{
   background: var(--body-color);
 }
+:root {
+  --contenedor: 75rem;
+  --color-10: #fff;
+  --color-boton:#f8434a;
+
+ 
+  --color-30:#f8434a;
+
+}
 html[data-theme='light']{  
  
-  --switch-color: var(--body-color);
+  --switch-color:#ededed ;
   --color-10:#ffff;
   --color-30:#f8434a;
   --body-color:#ededed; /* color 60%*/
@@ -29,6 +38,7 @@ html[data-theme='light']{
 }
 
 html[data-theme='dark'] {
+  --switch-color:#082032;
   --body-color:#082032; /* color 60%*/
   --color-10:#fff;
   --color-30:#2C394B;
@@ -54,7 +64,7 @@ label {
   text-indent: -9999px;
   width: 52px;
   height: 27px;
-  background:#334756;
+  background:var(--switch-color);
   float: right;
   border-radius: 100px;
   position: relative;
@@ -593,9 +603,7 @@ h1{
   position: relative;
     top: -27rem;
 }
-.contendor_Chigo:nth-child(2) .contendor_trabajar h3{
-  font-size: 3rem;
-}
+
 .contendor_Chigo:nth-child(2) .Circulo {
   grid-row-start: 1;
   grid-row-end: 2;

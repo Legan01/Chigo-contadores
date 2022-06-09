@@ -2,98 +2,74 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
+
+body{
+  background-color: var(--body-color);
+}
+
 :root {
-  --header-height: 2.5rem;
   --body-color:#ededed;
+  --header-height: 2.5rem;
+  --header-color:#dddddd;
   --color-10:#ffff;
   --color-30:#f8434a;
-  --body-color:#ededed; 
-  --body-font: 'Open Sans', sans-serif;
-  --switch-color:#ededed ;
-  --header-color:#dddddd;
+  --color-abajo:#fff;
+  --color-boton:#ededed;
+  --barra-abajo:#f8434a;
 
   /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
-
-}
-body{
-  background: var(--body-color);
+  
+  --body-font: 'Open Sans', sans-serif;
 }
 
-html[data-theme='light']{  
-  --body-color:#ededed;
-  --color-10:#ffff;
-
-  --body-color:#ededed; 
-
-  /* color 60%*/
-
-
-}
-
-html[data-theme='dark'] {
-  --switch-color:#082032;
-  --body-color:#082032; /* color 60%   light  dark*/
-  --color-10:#fff;
-  --color-30:#2C394B;
-  --texto:#fff;
+[data-theme='oscuro'] {
+  --body-color:#082032;
   --header-color:#2C394B;
+  --barra-abajo:#1f303d;
+  --color-30:#2C394B;
+  --color-boton:#082032;
+
 }
-
-
-
-
-
-input[type=checkbox] {
-  height: 0;
-  width: 0;
-  visibility: hidden;
-}
-
-
-
-/*label*/
-
-label {
-  cursor: pointer;
-  text-indent: -9999px;
-  width: 52px;
-  height: 27px;
-  background:var(--switch-color);
-  float: right;
-  border-radius: 100px;
+#toggle-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 28px;
+  width: 60px;
+  background-color: #1f1e1e;
+  border-radius: 16px;
+  padding: 2px 2px 0 2px;
   position: relative;
   left: 5rem;
   display: none;
 }
-label:after {
-  content: '';
+#toggle {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+.slider {
   position: absolute;
-  top: 3px;
-  left: 3px;
-  width: 20px;
-  height: 20px;
-  background: #fff;
-  border-radius: 90px;
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
+  top: 0;
+  left: 0;
 }
-
-input:checked + label {
-  background: var(--switch-color);
+.slider::before {
+  position: absolute;
+  content: '';
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #f3f3f3;
+  top: -1px;
+  left: -1px;
+  box-shadow: blue 0 0 5px;
+  transition: 0.4s;
 }
-
-input:checked + label:after {
-  left: calc(100% - 5px);
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+input:checked + .slider::before {
+  transform: translateX(32px);
 }
-
-label:active:after {
-  width: 45px;
-}
-
 
 
 /**/
@@ -332,7 +308,7 @@ h1{
   border-style: none;
   width: 8rem;
   height: 3rem;
-  background-color: var(--color-30);
+  background-color: var(--color-boton);
   color: var(--color-10);
   cursor: pointer;
 
@@ -354,6 +330,9 @@ h1{
 }
 
 @media screen and (max-width: 480px) and (max-width: 576px) {
+  #toggle-label{
+    display: block;
+  }
   label{
     display:block;
   }
@@ -363,7 +342,7 @@ h1{
     left: 0;
     width: 400px;
     height: 60px;
-    background:var(--color-30);
+    background:var(--barra-abajo);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -400,11 +379,12 @@ h1{
   line-height: 65px;
   font-size: 1.5em;
   transition: 0.5s;
-  color: var(--color-10);
+
 }
 .navigation ul li.active a .icon {
   transform: translateY(-30px);
-  color: var(--body-color);
+  color: var(--body-texto);
+  color: var(--color-abajo);
 }
 
 .navigation ul li a .text {
@@ -430,7 +410,7 @@ h1{
   top: -35px;
   width: 70px;
   height: 70px;
-  background: var(--color-30);
+  background: var(--barra-abajo);
   border-radius: 50%;
   z-index: 1;
   transition: 0.5s;
@@ -445,7 +425,8 @@ h1{
   height: 30px;
   background: transparent;
   border-radius: 50%;
-  box-shadow: 15px 18px var(--color-30);
+  box-shadow: 15px 18px var(--barra-abajo);
+
 }
 
 .indicator::after {
@@ -457,7 +438,7 @@ h1{
   height: 30px;
   background: transparent;
   border-radius: 50%;
-  box-shadow: -15px 18px var(--color-30);
+  box-shadow: -15px 18px var(--barra-abajo);
 }
 .nav__img {
   
@@ -542,6 +523,7 @@ h1{
   grid-column-end: 3;
   position: relative;
     bottom: 21rem;
+    color: var(--color-texto);
 }
 
 .contendor_Chigo .circulo {

@@ -38,9 +38,6 @@
 */
 /*romper el preloader */
 
-setTimeout(function(){
-    $('.loader_bg').fadeToggle();
-}, 1500);
 
 const list = document.querySelectorAll(".list");
 
@@ -53,34 +50,31 @@ function activeLink() {
 list.forEach((item) =>
 item.addEventListener("click", activeLink));
 
+const toggle = document.querySelector('#toggle');
+const themeActual = localStorage.getItem('theme');
 
-let theme = localStorage.getItem('data-theme');
-const checkbox = document.getElementById("switch");
-const changeThemeToDark = () =>{
-    document.documentElement.setAttribute("data-theme", "dark")
-    localStorage.setItem("data-theme", "dark")
-    console.log("I give you dark")
+if (themeActual) {
+  document.documentElement.setAttribute('data-theme', themeActual);
 }
 
-const changeThemeToLight = () =>{
-    document.documentElement.setAttribute("data-theme", "light")
-    localStorage.setItem("data-theme", 'light')
-    console.log("I give you light")
+if (themeActual === 'oscuro') {
+  toggle.checked = true;
 }
 
-if(theme === 'dark'){
-    changeThemeToDark()
-}
+const cambiarTheme = (event) => {
+  if (event.target.checked) {
+    document.documentElement.setAttribute('data-theme', 'oscuro');
+    localStorage.setItem('theme', 'oscuro');
+  } else {
+    document.documentElement.setAttribute('data-theme', null);
+    localStorage.setItem('theme', null);
+  }
+};
 
-checkbox.addEventListener('change', ()=> {
-    let theme = localStorage.getItem('data-theme');
-    if (theme ==='dark'){
-        changeThemeToLight()
-    }else{
-        changeThemeToDark()
-    }
-   
-});
+toggle.addEventListener('click', cambiarTheme);
+
+
+
 
 
 

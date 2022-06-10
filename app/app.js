@@ -37,6 +37,25 @@
          
 */
 /*romper el preloader */
+document.getElementById("boton").addEventListener("click",e=>{
+  Swal.fire({
+
+    showClass: {
+      popup: "animate__animated animate__fadeInDown",
+    },
+    hideClass: {
+      popup: "animate__animated animate__fadeOutUp",
+    },
+    title: "Asesoria fiscal",
+    html:
+      "asesoramiento para ayudarle en las decisiones que debas tomar en materia de Finanzacon el objetivo de que puedas rentabilizar cada vez mas tus recursos financieros",
+    showCloseButton: true,
+    confirmButtonText: '<i class="fa fa-thumbs-up"></i> Ok!',
+    confirmButtonAriaLabel: "Thumbs up, great!",
+  });
+})
+
+
 
 
 const list = document.querySelectorAll(".list");
@@ -78,20 +97,3 @@ toggle.addEventListener('click', cambiarTheme);
 
 
 
-function suma(){
-  Swal.fire({
-
-    showClass: {
-      popup: "animate__animated animate__fadeInDown",
-    },
-    hideClass: {
-      popup: "animate__animated animate__fadeOutUp",
-    },
-    title: "Asesoria fiscal",
-    html:
-      "asesoramiento para ayudarle en las decisiones que debas tomar en materia de Finanzacon el objetivo de que puedas rentabilizar cada vez mas tus recursos financieros",
-    showCloseButton: true,
-    confirmButtonText: '<i class="fa fa-thumbs-up"></i> Ok!',
-    confirmButtonAriaLabel: "Thumbs up, great!",
-  });
-}

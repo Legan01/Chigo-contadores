@@ -130,8 +130,8 @@ a{
 .texto_chigo-parrafo {
   position: relative;
   left: 10rem;
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 1.6rem;
+
 }
 
 .circulo {
@@ -602,17 +602,36 @@ h3{
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10rem;
     width: 80rem;
-    margin-left: 0rem;
+    margin-left: -2rem;
     position: relative;
     top: 2rem;
     color: var(--color-10);
   }
+  .contendor_Chigo:nth-child(2) {
+    align-items: center;
+    gap: 1rem;
+
+  }
+  .contendor_Chigo:nth-child(2) .Circulo {
+
+    width: 80%;
+    height: 35.563rem;
+  }
+  .contendor_trabajar{
+
+    position: relative;
+    right: 4rem;
+  }
   .circulo{
     width: 92%;
     height: 37.563rem;
+    
   }
   .texto_chigo-parrafo{
-    left: 7rem;
+    left: 4rem;
+  }
+  h3{
+    font-size: 2.5rem;
   }
   .nuestros_servicios{
     margin-top: 5rem;

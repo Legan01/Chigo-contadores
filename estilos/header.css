@@ -301,7 +301,7 @@ h1{
     center/contain;
   transform: scale(2.5);
 }
-#boton,#administracion,#contabilidad,#control,#impuestos{
+#boton,#asesoria,#administracion,#contabilidad,#control,#impuestos,#consultaria_em,#Planificación{
   border-radius: 0.2rem;
   /* outline: none; */
   border-style: none;
@@ -310,6 +310,14 @@ h1{
   background-color: var(--color-boton);
   color: var(--color-10);
   cursor: pointer;
+}
+#boton:hover,#asesoria:hover,#administracion:hover,#contabilidad:hover,#control:hover,#impuestos:hover,#consultaria_em:hover,#Planificación:hover{
+  background:#234f6e;
+}
+
+
+#boton:active,#asesoria:active,#administracion:active,#contabilidad:active,#control:active,#impuestos:active,#consultaria_em:active,#Planificación:active{
+  background:#234f6e;
 }
 
 

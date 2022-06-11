@@ -301,8 +301,7 @@ h1{
     center/contain;
   transform: scale(2.5);
 }
-#boton{
-  
+#boton,#administracion,#contabilidad,#control,#impuestos{
   border-radius: 0.2rem;
   /* outline: none; */
   border-style: none;
@@ -311,8 +310,8 @@ h1{
   background-color: var(--color-boton);
   color: var(--color-10);
   cursor: pointer;
-
 }
+
 
 .Circulo {
   background: url(../img/foto.webp);
@@ -343,6 +342,7 @@ h1{
     width: 400px;
     height: 60px;
     background:var(--barra-abajo);
+    transition: 0.4s;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -378,11 +378,12 @@ h1{
   display: block;
   line-height: 65px;
   font-size: 1.5em;
-  transition: 0.5s;
+  transition: 0.4s;
 
 }
 .navigation ul li.active a .icon {
   transform: translateY(-30px);
+
   color: var(--body-texto);
   color: var(--color-abajo);
 }
@@ -393,7 +394,7 @@ h1{
   font-weight: 400;
   font-size: 0.75em;
   letter-spacing: 0.05em;
-  transition: 0.5s;
+  transition: 0.4s;
   opacity: 0;
   transform: translateY(15px);
  
@@ -411,9 +412,9 @@ h1{
   width: 70px;
   height: 70px;
   background: var(--barra-abajo);
+  transition: 0.4s;
   border-radius: 50%;
   z-index: 1;
-  transition: 0.5s;
 }
 
 .indicator::before {
@@ -426,6 +427,7 @@ h1{
   background: transparent;
   border-radius: 50%;
   box-shadow: 15px 18px var(--barra-abajo);
+  transition: 0.4s;
 
 }
 
@@ -439,6 +441,7 @@ h1{
   background: transparent;
   border-radius: 50%;
   box-shadow: -15px 18px var(--barra-abajo);
+  transition: 0.4s;
 }
 .nav__img {
   

@@ -16,6 +16,7 @@
     contador fiscal,despacho de contadores, estudio de contadores, bufete de contadores,contadores fiscales,
     estudio contable,contador para personas fisicas, contabilidad  publica"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -106,7 +107,7 @@
     </header>
 
     <main>
-      <div class="contendor_Chigo">
+      <div class="contendor_Chigo " data-aos="fade-up" data-aos-duration="3000">
         <div class="contenedor__chigo-texto">
           <h1>Chigo Contadores</h1>
           <p class="texto_chigo-parrafo">
@@ -119,7 +120,7 @@
         <div class="circulo"></div>
       </div>
 
-      <section class="contendor_Chigo">
+      <section class="contendor_Chigo" data-aos="fade-up" data-aos-duration="3000"  >
         <!--Cambiar de nombre despues cuando se me ocurra uno mejor-->
         <div class="Circulo"></div>
         <!--Cambiar de nombre despues cuando se me ocurra uno mejor-->
@@ -165,7 +166,7 @@
           </span>
           </p>
           <ul class="pricing-table__products">
-            <input type="button" value="Descrubelo!" id="boton" />
+            <input type="button" value="Descrubelo!" id="contabilidad " class="prueba"  />
           </ul>
 
         </li>
@@ -182,7 +183,7 @@
           </span>
           </p>
           <ul class="pricing-table__products">
-            <input type="button" value="Descrubelo!" id="boton" />
+            <input type="button" value="Descrubelo!" id="administracion" />
           </ul>
 
         </li>
@@ -212,7 +213,7 @@
           </span>
           </p>
           <ul class="pricing-table__products">
-            <input type="button" value="Descrubelo!" id="boton" />
+            <input type="button" value="Descrubelo!" id="control" />
           </ul>
 
         </li>
@@ -227,7 +228,7 @@
           </span>
           </p>
           <ul class="pricing-table__products">
-            <input type="button" value="Descrubelo!" onclick="suma()" id="boton" />
+            <input type="button" value="Descrubelo!" id="boton" />
           </ul>
 
         </li>
@@ -243,7 +244,7 @@
           </span>
           </p>
           <ul class="pricing-table__products">
-            <input type="button" value="Descrubelo!"  id="boton" />
+            <input type="button" value="Descrubelo!"  id="impuestos" />
           </ul>
 
         </li>
@@ -257,8 +258,10 @@
 
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="app/app.js"></script>
-
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   </body>

@@ -37,26 +37,6 @@
          
 */
 /*romper el preloader */
-document.getElementById("boton").addEventListener("click",e=>{
-  Swal.fire({
-
-    showClass: {
-      popup: "animate__animated animate__fadeInDown",
-    },
-    hideClass: {
-      popup: "animate__animated animate__fadeOutUp",
-    },
-    title: "Asesoria fiscal",
-    html:
-      "asesoramiento para ayudarle en las decisiones que debas tomar en materia de Finanzacon el objetivo de que puedas rentabilizar cada vez mas tus recursos financieros",
-    showCloseButton: true,
-    confirmButtonText: '<i class="fa fa-thumbs-up"></i> Ok!',
-    confirmButtonAriaLabel: "Thumbs up, great!",
-  });
-})
-
-
-
 
 const list = document.querySelectorAll(".list");
 
@@ -91,6 +71,134 @@ const cambiarTheme = (event) => {
 };
 
 toggle.addEventListener('click', cambiarTheme);
+
+
+
+
+
+
+
+document.getElementById("boton").addEventListener("click",e=>{
+  Swal.fire({
+
+    showClass: {
+      popup: "animate__animated animate__fadeInDown",
+    },
+    hideClass: {
+      popup: "animate__animated animate__fadeOutUp",
+    },
+    title: "Asesoria fiscal",
+    html:
+      "asesoramiento para ayudarle en las decisiones que debas tomar en materia de Finanzacon el objetivo de que puedas rentabilizar cada vez mas tus recursos financieros",
+    showCloseButton: true,
+    confirmButtonText: '<i class="fa fa-thumbs-up"></i> Ok!',
+    confirmButtonAriaLabel: "Thumbs up, great!",
+  });
+});
+
+
+document.getElementById("contabilidad").addEventListener("click",e=>{
+  Swal.fire({
+
+    showClass: {
+      popup: "animate__animated animate__fadeInDown",
+    },
+    hideClass: {
+      popup: "animate__animated animate__fadeOutUp",
+    },
+    title: "Asesoria fiscal",
+    html:
+      "asesoramiento y elaboración puntual de los comprobantes de nómina, elaboración de finiquitos, calculo de vacaciones, primas vacacionales, aguinaldo, tiempo extra, etc.",
+    showCloseButton: true,
+    confirmButtonText: '<i class="fa fa-thumbs-up"></i> Ok!',
+    confirmButtonAriaLabel: "Thumbs up, great!",
+  });
+});
+
+
+document.getElementById("control").addEventListener("click",e=>{
+  Swal.fire({
+
+    showClass: {
+      popup: "animate__animated animate__fadeInDown",
+    },
+    hideClass: {
+      popup: "animate__animated animate__fadeOutUp",
+    },
+    title: "Asesoria fiscal",
+    html:
+      "Revisiónes de procesos de control.   ",
+    showCloseButton: true,
+    confirmButtonText: '<i class="fa fa-thumbs-up"></i> Ok!',
+    confirmButtonAriaLabel: "Thumbs up, great!",
+  });
+});
+
+
+document.getElementById("control").addEventListener("click",e=>{
+  Swal.fire({
+
+    showClass: {
+      popup: "animate__animated animate__fadeInDown",
+    },
+    hideClass: {
+      popup: "animate__animated animate__fadeOutUp",
+    },
+    title: "Asesoria fiscal",
+    html:
+      "Revisiónes de procesos de control.   ",
+    showCloseButton: true,
+    confirmButtonText: '<i class="fa fa-thumbs-up"></i> Ok!',
+    confirmButtonAriaLabel: "Thumbs up, great!",
+  });
+});
+
+
+document.getElementById("impuestos").addEventListener("click",e=>{
+  Swal.fire({
+
+    showClass: {
+      popup: "animate__animated animate__fadeInDown",
+    },
+    hideClass: {
+      popup: "animate__animated animate__fadeOutUp",
+    },
+    title: "Asesoria fiscal",
+    html:
+      "Revisiónes de procesos de control.   ",
+    showCloseButton: true,
+    confirmButtonText: '<i class="fa fa-thumbs-up"></i> Ok!',
+    confirmButtonAriaLabel: "Thumbs up, great!",
+  });
+});
+
+
+
+
+
+
+document.getElementById("administracion").addEventListener("click",e=>{
+  Swal.fire({
+
+    showClass: {
+      popup: "animate__animated animate__fadeInDown",
+    },
+    hideClass: {
+      popup: "animate__animated animate__fadeOutUp",
+    },
+    title: "Asesoria fiscal",
+    html:
+      "asesoramiento y elaboración puntual de los comprobantes de nómina, elaboración de finiquitos, calculo de vacaciones, primas vacacionales, aguinaldo, tiempo extra, etc.",
+    showCloseButton: true,
+    confirmButtonText: '<i class="fa fa-thumbs-up"></i> Ok!',
+    confirmButtonAriaLabel: "Thumbs up, great!",
+  });
+});
+
+
+
+
+
 
 
 
